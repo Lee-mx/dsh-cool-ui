@@ -1,0 +1,3 @@
+- insert:
+    - id: dsh-cool-ui
+      name: '@dsh-cool-ui/plugin'
