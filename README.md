@@ -2,6 +2,8 @@
 
 An original mecha-command visual layer for a DeepSeek Harness Web profile.
 
+![Plugin preview](assets/plugin-preview.png)
+
 It is a single DSH bundle: the Host half serves the packaged hero artwork, and the browser half adds a non-interactive HUD, background treatment, and responsive framing without changing the Agent, session, or tool behavior.
 
 ## Local development
