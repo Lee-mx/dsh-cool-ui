@@ -14,6 +14,8 @@ cd E:\code\deepseek-harness
 pnpm dsh plugin --profile web add E:\code\dsh-cool-ui
 pnpm dsh web
 ```
+![Uploading image.png…]()
+
 
 The bundle uses the public package name `@dsh-cool-ui/plugin`. Its `cordis.patch.yml` inserts one row that activates both the Host and browser halves.
 
