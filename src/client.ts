@@ -81,6 +81,21 @@ const css = `
 :root.dsh-cool-ui body[data-ds-dark-theme] #root [class*="_cardId"] {
   color: #ffffff !important;
 }
+:root.dsh-cool-ui body[data-ds-dark-theme] #root textarea,
+:root.dsh-cool-ui body[data-ds-dark-theme] #root input,
+:root.dsh-cool-ui body[data-ds-dark-theme] #root [contenteditable="true"] {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff;
+  caret-color: #ffffff;
+}
+:root.dsh-cool-ui body[data-ds-dark-theme] #root textarea::placeholder,
+:root.dsh-cool-ui body[data-ds-dark-theme] #root input::placeholder,
+:root.dsh-cool-ui body[data-ds-dark-theme] #root [contenteditable="true"][data-placeholder]:empty::before,
+:root.dsh-cool-ui body[data-ds-dark-theme] #root [contenteditable="true"][data-placeholder]:empty::after {
+  color: #aeb8c4 !important;
+  -webkit-text-fill-color: #aeb8c4;
+  opacity: 1;
+}
 :root.dsh-cool-ui #root [class*="_selected"],
 :root.dsh-cool-ui #root button:hover {
   border-color: rgba(83, 237, 255, .62) !important;
@@ -132,7 +147,9 @@ const css = `
 }
 :root.dsh-cool-ui body:not([data-ds-dark-theme]) #${BACKDROP_ID} {
   background-color: #dcecf6;
-  filter: saturate(.78) contrast(.95) brightness(1.5);
+  background-image: url('/dsh-cool-ui/assets/mecha-settings-command-deck.png');
+  background-position: center;
+  filter: saturate(.9) contrast(.96) brightness(1.03);
 }
 :root.dsh-cool-ui body:not([data-ds-dark-theme])::before {
   background:
